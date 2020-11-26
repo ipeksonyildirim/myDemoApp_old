@@ -4,19 +4,12 @@
 package example;
 import java.util.ArrayList;
 public class App {
-    public String getGreeting() {
-        return "Hello world.";
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
-    }
-    public static boolean search(ArrayList<Integer> array, int e) {
+    public static boolean search(ArrayList<Integer> array, int e,int a) {
         System.out.println("inside search");
         if (array == null) return false;
   
         for (int elt : array) {
-          if (elt == e) return true;
+          if (elt == e || elt == a) return true;
         }
         return false;
       }
